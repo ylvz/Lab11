@@ -1,0 +1,1 @@
+Ange ett tal att summera (Ctrl-X för att avsluta): Summan av talen är: 34

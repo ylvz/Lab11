@@ -1,18 +1,17 @@
-Ange koefficienter för ett polynom (a, b, c)
-a: b: c: Rötter av polynomet 1x^2 + 2x + 1:
-En reell rot (dubbelrot): -1
+Polynom: 1x^2 + 2x + 1
+En dubbelrot: x = -1
+Eval för rot: 0
 
-Ange koefficienter för ett polynom (a, b, c)
-a: b: c: Rötter av polynomet 2x^2 + -1x + -1:
-Två reella rötter: 1 och -0.5
+Polynom: 2x^2 + -1x + -1
+Två rötter: x1 = 1, x2 = -0.5
+Eval för rot1: 0
+Eval för rot2: 0
 
-Ange koefficienter för ett polynom (a, b, c)
-a: b: c: Rötter av polynomet 1x^2 + 1x + 1:
+Polynom: 1x^2 + 1x + 1
 Inga reella rötter.
 
-Ange koefficienter för ett polynom (a, b, c)
-a: b: c: Rötter av polynomet 1x^2 + 2x + -2:
-Två reella rötter: 0.732051 och -2.73205
+Polynom: 1x^2 + 2x + -2
+Två rötter: x1 = 0.732051, x2 = -2.73205
+Eval för rot1: 0
+Eval för rot2: 4.76837e-07
 
-Ange koefficienter för ett polynom (a, b, c)
-a: 
