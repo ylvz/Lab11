@@ -1,17 +1,17 @@
-Polynom: 1x^2 + 2x + 1
-En dubbelrot: x = -1
-Eval för rot: 0
+Polynomial: 1x^2 + 2x + 1
+One real root: -1
+Value of polynomial at root: 0
 
-Polynom: 2x^2 + -1x + -1
-Två rötter: x1 = 1, x2 = -0.5
-Eval för rot1: 0
-Eval för rot2: 0
+Polynomial: 2x^2 - 1x - 1
+Two real roots: 1 and -0.5
+Value of polynomial at root1: 0
+Value of polynomial at root2: 0
 
-Polynom: 1x^2 + 1x + 1
-Inga reella rötter.
+Polynomial: 1x^2 + 1x + 1
+No real roots
 
-Polynom: 1x^2 + 2x + -2
-Två rötter: x1 = 0.732051, x2 = -2.73205
-Eval för rot1: 0
-Eval för rot2: 4.76837e-07
+Polynomial: 1x^2 + 2x - 2
+Two real roots: 0.732051 and -2.73205
+Value of polynomial at root1: 0
+Value of polynomial at root2: 4.76837e-07
 

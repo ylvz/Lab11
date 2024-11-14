@@ -9,17 +9,46 @@
 
 
 //Uppgift 3
-//int main(){
+
+int main(int argc, char* argv[]) {
+
+    std::cout << "Hello World! Nice to see you";
+
+    // Iterate through the command-line arguments (starting from 1, skipping argv[0] which is the program name)
+    for (int i = 1; i < argc; i++) {
+        if (i < 2) {
+            // If it's the first argument after the program name, add a comma before it
+            std::cout << ", " << argv[i];
+        }
+        // For all subsequent arguments, separate them by a space
+        else {
+            std::cout << " " << argv[i];
+        }
+    }
+
+    std::cout << std::endl;
+    return 0;
+}
+
+//Uppgift 4
+//int main() {
 //
-//    //std::string name;
-//    //std::cout << "Hello! What's your name?\n";
-//    //std::getline(std::cin, name);
+//    double number, sum = 0;
 //
-//    //std::cout << "Hello! " << name << ", welcome!" << std::endl;
+//    std::cout << "Ange tal att summera: ";
+//
+//    while (std::cin >> number) {
+//        sum += number;
+//    }
+//
+//    std::cout << "Summan av talen är: " << sum << std::endl;
+//    
 // return 0;
 //
 //}
-// 
+
+
+ 
 //Uppgift 8
 //int main() {
 //    // Skapa polynom med olika koefficienter
@@ -43,7 +72,7 @@
 //    return 0;
 //}
 
-//////Uppgift 9
+////Uppgift 9
 //int main() {
 //    // Skapa polynom med olika koefficienter
 //    Poly2 p1(1, 2, 1);   // x^2 + 2x + 1 (En dubbelrot)
@@ -122,56 +151,56 @@
 //}
 
 //Uppgift 11
-int main() {
-    std::ifstream file("coeffs.txt");
-    std::ofstream outFile("roots.txt");
-
-    if (!file.is_open()) {
-        std::cerr << "Error opening input file." << std::endl;
-        return 1;
-    }
-
-    float a, b, c;
-    while (file >> a >> b >> c) {
-        Poly2 poly(a, b, c); // Create a Poly2 object with the coefficients from the file
-
-        // Define variables for the roots and the number of roots
-        double root1, root2;
-        int rootCount;
-
-        // Print the polynomial in the form "ax^2 + bx + c"
-        outFile << "Polynomial: " << a << "x^2 ";
-        if (b >= 0)
-            outFile << "+ " << b << "x ";
-        else
-            outFile << "- " << -b << "x ";
-        if (c >= 0)
-            outFile << "+ " << c << std::endl;
-        else
-            outFile << "- " << -c << std::endl;
-
-        // Call findRoots method to get the number of roots and the actual roots
-        poly.findRoots(rootCount, root1, root2);
-
-        // Print the roots and evaluation results to the output file
-        if (rootCount == 0) {
-            outFile << "No real roots" << std::endl;
-        }
-        else if (rootCount == 1) {
-            outFile << "One real root: " << root1 << std::endl;
-            outFile << "Value of polynomial at root: " << poly.eval(root1) << std::endl;
-        }
-        else if (rootCount == 2) {
-            outFile << "Two real roots: " << root1 << " and " << root2 << std::endl;
-            outFile << "Value of polynomial at root1: " << poly.eval(root1) << std::endl;
-            outFile << "Value of polynomial at root2: " << poly.eval(root2) << std::endl;
-        }
-
-        outFile << std::endl; // Add a blank line between different polynomials
-    }
-
-    return 0;
-}
+//int main() {
+//    std::ifstream file("coeffs.txt");
+//    std::ofstream outFile("roots.txt");
+//
+//    if (!file.is_open()) {
+//        std::cerr << "Error opening input file." << std::endl;
+//        return 1;
+//    }
+//
+//    float a, b, c;
+//    while (file >> a >> b >> c) {
+//        Poly2 poly(a, b, c); // Create a Poly2 object with the coefficients from the file
+//
+//        // Define variables for the roots and the number of roots
+//        double root1, root2;
+//        int rootCount;
+//
+//        // Print the polynomial in the form "ax^2 + bx + c"
+//        outFile << "Polynomial: " << a << "x^2 ";
+//        if (b >= 0)
+//            outFile << "+ " << b << "x ";
+//        else
+//            outFile << "- " << -b << "x ";
+//        if (c >= 0)
+//            outFile << "+ " << c << std::endl;
+//        else
+//            outFile << "- " << -c << std::endl;
+//
+//        // Call findRoots method to get the number of roots and the actual roots
+//        poly.findRoots(rootCount, root1, root2);
+//
+//        // Print the roots and evaluation results to the output file
+//        if (rootCount == 0) {
+//            outFile << "No real roots" << std::endl;
+//        }
+//        else if (rootCount == 1) {
+//            outFile << "One real root: " << root1 << std::endl;
+//            outFile << "Value of polynomial at root: " << poly.eval(root1) << std::endl;
+//        }
+//        else if (rootCount == 2) {
+//            outFile << "Two real roots: " << root1 << " and " << root2 << std::endl;
+//            outFile << "Value of polynomial at root1: " << poly.eval(root1) << std::endl;
+//            outFile << "Value of polynomial at root2: " << poly.eval(root2) << std::endl;
+//        }
+//
+//        outFile << std::endl; // Add a blank line between different polynomials
+//    }
+//
+//    return 0;
+//}
 
 
 

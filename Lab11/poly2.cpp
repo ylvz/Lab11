@@ -49,7 +49,7 @@ float Poly2::eval(float x) {
 //        return 2;  // Två rötter
 //    }
 //}
-//
+
 
 //Uppgift 10 och 11
 void Poly2::findRoots(int& numRoots, double& root1, double& root2) const {
